@@ -3,3 +3,4 @@
 /.env
 /questions.json
 /db.sqlite3
+/triviaback/settings.py
