@@ -29,6 +29,8 @@ class User(AbstractBaseUser):
     role = models.CharField(max_length=10, choices=ROLE_CHOICES)
     is_active = models.BooleanField(default=True)
     email_verified = models.BooleanField(default=False)
+    XP = models.IntegerField(default=0)
+    hearts = models.IntegerField(default=5)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     is_admin = models.BooleanField(default=False)
